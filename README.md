@@ -1,5 +1,3 @@
 # Hot Garbage
 
-* Stupid
-* Web
-* Shit
+[Stupid Web Shit](https://www.hotgarba.ge)
