@@ -1,41 +1,71 @@
 <!DOCTYPE html>
+
 <head>
-<title>Stupid Web Shit</title>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<style>
-body {
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-	body {
-		color: white;
-		background-color: black;
-	}
-}
-</style>
+	<title>Stupid Web Shit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<style>
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			max-width: 1024px;
+			flex-direction: column;
+		}
+		article {
+			margin: 1em;
+			padding: 0 1em 1em 1em;
+			border: 1px solid grey;
+			flex: 1 1 0;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color: black;
+				filter: invert(100%);
+			}
+		}
+		@media (min-width: 768px) {
+			.container {
+				flex-direction: row;
+			}
+		}
+	</style>
 </head>
 <h1>Stupid Web Shit</h1>
+<div class="container">
 <article>
-<header>
-<h1><a target="_blank" href="https://poolette.hotgarba.ge">Poolette</a></h1>
-</header>
-<p>
-	Random feces from SF311<br>
-</p>
-<footer>
-	<a target="_blank" href="https://github.com/HotGarbo/poolette">Github</a>
-</footer>
+	<header>
+		<h1><a target="_blank" href="https://poolette.hotgarba.ge">Poolette</a></h1>
+	</header>
+	<p>
+		Random feces from SF311
+	</p>
+	<footer>
+		<a target="_blank" href="https://github.com/HotGarbo/poolette">Github</a>
+	</footer>
 </article>
 <article>
-<header>
-<h1><a target="_blank" href="https://nftz.hotgarba.ge">NFTz</a></h1>
-</header>
-<p>
-	lol NFTs<br>
-</p>
-<footer>
-	<a target="_blank" href="https://github.com/HotGarbo/nftz">Github</a>
-</footer>
+	<header>
+		<h1><a target="_blank" href="https://nftz.hotgarba.ge">NFTz</a></h1>
+	</header>
+	<p>
+		lol NFTs
+	</p>
+	<footer>
+		<a target="_blank" href="https://github.com/HotGarbo/nftz">Github</a>
+	</footer>
 </article>
-
+<article>
+	<header>
+		<h1><a target="_blank" href="https://shitlist.hotgarba.ge">Shitkicker Shitlist</a></h1>
+	</header>
+	<p>
+		Violate Texas House Bill 20 before it violates you
+	</p>
+	<footer>
+		<a target="_blank" href="https://github.com/HotGarbo/shitlist">Github</a>
+	</footer>
+</article>
+</div>
