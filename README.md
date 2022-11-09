@@ -1,3 +1,3 @@
 # Hot Garbage
 
-[Stupid Web Shit](https://www.hotgarba.ge)
+[Transgressive Web Shit](https://www.hotgarba.ge)
