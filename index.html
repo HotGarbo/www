@@ -5,30 +5,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<style>
+		* {
+			box-sizing: border-box;
+		}
 		body {
-			font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+			font-family: system-ui, sans-serif;
 		}
 		.container {
 			display: flex;
 			max-width: 1024px;
 			flex-direction: column;
+			flex-wrap: wrap;
 			gap: 1em;
 		}
 		article {
 			padding: 0 1em 1em 1em;
 			border: 1px solid grey;
-			flex: 1 1 0;
+			display: flex;
+			flex-direction: column;
+			min-width: calc(25% - 1em);
+		}
+		article p {
+			margin: 0;
+			flex-grow: 1;
+		}
+		article footer {
+			margin-top: 1em;
+			align-self: flex-end;
 		}
 
 		@media (prefers-color-scheme: dark) {
 			body {
 				background-color: black;
-				filter: invert(100%);
+				filter: invert(100%) hue-rotate(210deg);
 			}
 		}
-		@media (min-width: 768px) {
+		@media (min-width: 30em) {
 			.container {
 				flex-direction: row;
+			}
+			article {
+				width: calc(50% - 1em);
+			}
+		}
+		@media (min-width: 50em) {
+			article {
+				width: calc(25% - 1em);
 			}
 		}
 	</style>
@@ -40,10 +62,10 @@
 		<h1><a target="_blank" href="https://peter.hotgarba.ge">Peter Alerts</a></h1>
 	</header>
 	<p>
-		PWA push notifications inspired by <a target="_blank" href="https://github.com/kokoscript/PeterAlert">kokoscript/PeterAlert</a>.
+		PWA push notifications inspired by <a target="_blank" href="https://github.com/kokoscript/PeterAlert">kokoscript/PeterAlert</a>
 	</p>
 	<footer>
-		<a target="_blank" href="https://github.com/HotGarbo/peter">Github</a>
+		<a target="_blank" href="https://github.com/HotGarbo/peter">GitHub</a>
 	</footer>
 </article>
 <article>
@@ -54,7 +76,7 @@
 		Violate Texas House Bill 20 before it violates you
 	</p>
 	<footer>
-		<a target="_blank" href="https://github.com/HotGarbo/shitlist">Github</a>
+		<a target="_blank" href="https://github.com/HotGarbo/shitlist">GitHub</a>
 	</footer>
 </article>
 <article>
@@ -65,7 +87,7 @@
 		lol NFTs
 	</p>
 	<footer>
-		<a target="_blank" href="https://github.com/HotGarbo/nftz">Github</a>
+		<a target="_blank" href="https://github.com/HotGarbo/nftz">GitHub</a>
 	</footer>
 </article>
 <article>
@@ -76,7 +98,7 @@
 		Random feces from SF311
 	</p>
 	<footer>
-		<a target="_blank" href="https://github.com/HotGarbo/poolette">Github</a>
+		<a target="_blank" href="https://github.com/HotGarbo/poolette">GitHub</a>
 	</footer>
 </article>
 </div>
