@@ -4,7 +4,7 @@
 	<title>Hot Garbage</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Stupid Web Shit">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="initial-scale=1">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -13,10 +13,8 @@
 			font-family: system-ui, sans-serif;
 		}
 		main {
-			display: flex;
-			max-width: 1024px;
-			flex-direction: column;
-			flex-wrap: wrap;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 			gap: 1em;
 		}
 		article {
@@ -24,7 +22,6 @@
 			border: 1px solid grey;
 			display: flex;
 			flex-direction: column;
-			min-width: calc(25% - 1em);
 		}
 		article p {
 			margin: 0;
@@ -39,19 +36,6 @@
 			body {
 				background-color: black;
 				filter: invert(100%) hue-rotate(210deg);
-			}
-		}
-		@media (min-width: 30em) {
-			main {
-				flex-direction: row;
-			}
-			article {
-				width: calc(50% - 1em);
-			}
-		}
-		@media (min-width: 50em) {
-			article {
-				width: calc(25% - 1em);
 			}
 		}
 	</style>
